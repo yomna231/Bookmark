@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background-color: #fec260;
+    color:transparent;
+}
+
+.main-section {
+    min-height: 100vh;
+    background-color: #f7ecde;
+}
+
+.main-header {
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #352e28;
+    isolation: isolate;
+    position: relative;
+    z-index: 1;
+    
+}
+
+.main-header::after {
+    content: "";
+    position: absolute;
+    height: 40%;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FEC260;
+    z-index: -1;
+}
+
+.main-header:hover::after {
+    height: 70%;
+    transition: all 0.5s;
+}
+.body-section{
+    border-block: 2px dotted #352e28;
+}
+.body-section h2{
+    font-family: "Righteous", cursive;
+    font-size: 25px;
+    background-image: linear-gradient(to right, #3ca55c, #b5ac49);
+    background-clip: text;
+    color: transparent;
+}
+#bookmarkName:focus,
+#bookmarkURL:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px rgba(254, 194, 96, 0.6); 
+    border-color: #FEC260; 
+    transition: box-shadow 0.3s ease, border-color 0.3s ease; 
+}
+
+.btn-submit {
+    --bs-btn-color: #fff !important;
+    --bs-btn-bg: #d1512d !important;
+    --bs-btn-border-color: #d1512d !important;
+    --bs-btn-hover-color: #fff !important;
+    --bs-btn-hover-bg: #bb4120 !important;
+    --bs-btn-hover-border-color: #a03315 !important;
+    font-family: "PT Sans Caption", sans-serif ;
+}
+
+.btn:hover {
+    color: #fff;
+    background-color: #bb4120;
+    border-color: #a03315;
+}
+.table{
+    font-family:"PT Sans Caption", sans-serif ;
+    font-weight:700;
+    font-size: 16px;
+    line-height: 24px;
+}
+.status-message {
+    font-size: 12px;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+
+.is-valid {
+    border-color: #28a745 !important; 
+    background-color: #fff !important; 
+}
+
+.is-invalid {
+    border-color: #dc3545 !important; 
+    background-color: #fff !important;
+}
+
+.modal-icons .icon1{
+    color: #f15f5d;
+}
+.modal-icons .icon2{
+    color: #febe2e;
+}
+.modal-icons .icon3{
+    color: #4db748;
+}
